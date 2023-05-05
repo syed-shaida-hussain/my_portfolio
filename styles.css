@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 :root{
-    --primary_color :#6EE7B7; /**#8B5CF6;**/
+    --primary_color :#0ea5e9; /**#8B5CF6;**/
     --dark_gray : 
     #6B7280;
     --off_white : #F3F4F6;
@@ -28,25 +28,49 @@ hr {
     margin: auto;
 } 
 
+.centered{
+    text-align: center;
+}
+
 /** links **/
 
 .link{
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem ;
     color: white;
+}
+
+.link:hover{
+    border-bottom: 2px solid var(--off_white);
 }
 
 .link_primary{
+    text-decoration: none;
+    padding: 0.5rem 1rem ;
     background-color: var(--primary_color);
     border-radius: 0.5rem;
-    color: white;
+    color: var(--off_white);
+    border: 1.5px solid var(--primary_color);
+    font-weight: bold;
+}
+
+.link_primary:hover{
+    background-color: var(--off_white);
+    color: var(--primary_color);
 }
 
 .link_secondary{
+    text-decoration: none;
+    padding: 0.5rem 1rem ;
+    font-weight: bold;
     color: var(--primary_color);
     border-radius: 0.5rem;
     border: 1px solid var(--primary_color) ;
+}
 
+.link_secondary:hover{
+    background-color: var(--primary_color);
+    color: var(--off_white);
 }
 
 .list_non_bullet{
@@ -61,12 +85,15 @@ hr {
 .navigation{
     background-color: var(--primary_color);
     color:white;
-    padding: 1rem;
+    padding: 0.5rem;
     border-bottom-left-radius: 1rem;
 }
 
 .navigation .nav-brand{
     font-weight:bold;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: large;
 }
 
 .navigation .nav_pills{
@@ -79,7 +106,10 @@ hr {
 }
 
 .navigation .link-active{
-    font-weight: bold;
+    font-weight: bolder;
+    border-bottom: 2px solid var(--off_white);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .hero {
@@ -89,18 +119,38 @@ hr {
 
 .hero-img {
     max-width: 250px;
+    border-radius: 50%;
     display: block;
     margin: auto;
 }
 
 .hero .hero-heading {
-    padding-top: 1rem;
     color: var(--dark_gray);
     text-align: center;
 }
 
 .hero .heading-inverted{
     color: var(--primary_color);
+    
+}
+
+.logo-container{
+    text-align: center;
+}
+
+.logo{
+    max-width: 3rem;
+}
+
+.flex-c{
+    width: 5rem;
+    margin: 1rem 2rem;
+}
+
+.flex-r{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 /** section **/
@@ -109,7 +159,7 @@ hr {
     padding: 2rem;
 }
 
-.section h1 {
+.section h1,h2 {
     text-align: center;
 }
 
@@ -119,10 +169,12 @@ hr {
 
 .footer {
     background-color: var(--primary_color);
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem;
     text-align: center;
     color: white;
     border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+
 }
 
 .footer ul {
@@ -135,7 +187,16 @@ hr {
     font-weight: bold;
 }
 
+.fa{
+    padding: 0.2rem 0.4rem;
+}
+
+.fa:hover{
+    background-color: var(--off_white);
+    color: var(--primary_color);
+    border-radius: 1rem;
+}
+
 .ft-sm{
     font-size: 0.8rem;
 }
-

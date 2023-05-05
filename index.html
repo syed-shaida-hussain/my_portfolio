@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home | Syed Shaida</title>
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -25,59 +26,89 @@
     </nav>
 
     <header  class="hero">
-      <h1 class="hero-heading">Syed Shaida The <span class="heading-inverted"> Web Developer</span> </h1>
-      <div class="">Contact :</div>
-      <p class="ft-sm">Phone +91 9149701175</p>
-      <p class="ft-sm">Email : syedshaida59991@gmail.com</p>
+      <img src="/images/shaida.jpg" class="hero-img"/>
+      <h1 class="hero-heading">Syed Shaida</h1>
+      <h2 class="hero-heading heading-inverted">Frontend Web Developer</h2>
+      <div class="centered"><a href="#technologies" class=" link_primary">Know More</a> </div>
     </header>
 
-    <section class="section ow">
+    <section class="section ow" id="technologies">
       <div class="container container_center">
         <h1>Technologies</h1>
-        <p> I am familiar with <strong>HTML5 , CSS3 , Javascript , NodeJs , ExpressJs ,  Git , Web Hosting , reactJs and redux</strong>. </p>
+        <h2> I am familiar with</h2>
+        <div class="logo-container conatiner_center flex-r">
+          <span class="flex-c ">
+            <img src="./images/react-icon.png" alt="react-logo" class="logo"/>
+            <span>React Js</span>
+          </span>
+          <span class="flex-c">
+            <img src="./images/js-logo.png" alt="javascript-logo" class="logo"/>
+            <span>Javascript</span>
+          </span>
+          <span class="flex-c">
+            <img src="./images/redux-logo.png" alt="redux-logo" class="logo"/>
+            <span>Redux</span>
+          </span>
+          <span class="flex-c">
+            <img src="./images/html-logo.png" alt="html-logo" class="logo"/>
+            <span>HTML</span>
+          </span>
+          <span class="flex-c">
+            <img src="./images/css-logo.png" alt="css-logo" class="logo"/>
+            <span>CSS</span>
+          </span>
+          <span class="flex-c">
+            <img src="./images/ajax-logo.svg" alt="ajax-logo" class="logo"/>
+            <span>Ajax</span>
+          </span>
+          <span class="flex-c">
+            <img src="./images/github-logo.png" alt="git-logo" class="logo"/>
+            <span>Github</span>
+          </span>
+          <span class="flex-c">
+            <img src="./images/netlify-logo.png" alt="netlify-logo" class="logo"/>
+            <span>Hosting</span>
+          </span>
+        </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container container_center">
-        <h1>projects</h1>
-        <p>Here are some of my projects which i have made using Javascript. Give them a look.</p>
-        <a class="link link_primary" href="/projects.html">see projects</a>
+      <div class="container centered container_center">
+        <h1>My Projects</h1>
+        <img src = "./images/projects.svg" class="hero-img"/>
+        <p>Here , you can explore my hosted projects with live links!</p>
+        <a class="link_primary" href="/projects.html">Explore projects</a>
       </div>
     </section>
 
     <section class="section ow">
-      <div class="container container_center">
-        <h1>blogs</h1>
-        <p> I am writing some technical and non_technical blogs related to my learning journey. I like to publish these
+      <div class="container centered container_center">
+        <h1>My Blogs</h1>
+        <img src="./images/blogs.svg" class="hero-img"/>
+        <p > I am writing some technical and non_technical blogs related to my learning journey. I like to publish these
           blogs here. Don't miss out
           on them.</p>
 
-        <a class="link link_secondary" href="/blogs.html">Read Blogs</a>
+        <a class="link_secondary" href="/blogs.html">Read Blogs</a>
       </div>
 
     </section>
 
     <footer class="footer">
-      <div class="footer-header">Social Media Presence</div>
+      <div class="footer-header">Get In Touch</div>
       <ul class="social-links list_non_bullet">
 
         <li class="list_inline">
-          <a class="link" href="https://github.com/syed-shaida-hussain">
-            Github
-          </a>
+          <a class="link fa fa-github" style="font-size  : 32px " href="https://github.com/syed-shaida-hussain"></a>
         </li>
 
         <li class="list_inline">
-          <a class="link" href="https://www.linkedin.com/in/syed-shaida-hussain-51748b205/">
-            Linkedin
-          </a>
+          <a class="link fa fa-linkedin-square " style="font-size  : 32px " href="https://www.linkedin.com/in/syed-shaida-hussain-51748b205/"></a>
         </li>
 
         <li class="list_inline">
-          <a class="link" href="https://twitter.com/shaida_hussain_">
-            Twitter
-          </a>
+          <a class="link fa fa-twitter" style="font-size  : 32px " href="https://twitter.com/shaida_hussain_" ></a>
         </li>
 
       </ul>
