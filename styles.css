@@ -153,6 +153,12 @@ hr {
     flex-wrap: wrap;
 }
 
+.text{
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+    font-size : 0.9rem;
+}
+
 /** section **/
 
 .section {
